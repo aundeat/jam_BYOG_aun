@@ -32,7 +32,7 @@ public class TriggerSteirs : MonoBehaviour
     {
         if (playerInsideTrigger && Input.GetKeyDown(KeyCode.E))
         {
-            anim.SetBool("endScene", true);
+            if (anim != null) anim.SetBool("endScene", true);
 
             GameObject.Find("Fader").GetComponent<LoadScene>().inxexScene = loadScene;
         }
