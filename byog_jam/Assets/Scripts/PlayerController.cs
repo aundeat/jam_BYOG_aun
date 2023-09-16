@@ -2,9 +2,9 @@
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float speedIncreaseRate = 2f; 
+    [SerializeField] private float speedIncreaseRate = 2f;
     [SerializeField] private float maxSpeed = 10f;
-    [SerializeField] private bool canRun = false; 
+    [SerializeField] private bool canRun = false;
 
     private bool isIncreasingSpeed;
     private float minSpeed;
@@ -13,19 +13,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float decreaseSpeed = 2f;
 
- 
     private bool isSitting = false;
+    private Rigidbody2D rb; // Ссылка на компонент Rigidbody2D
+
     private void Start()
     {
         minSpeed = moveSpeed;
+        rb = GetComponent<Rigidbody2D>(); // Получаем компонент Rigidbody2D
     }
+
     private void Update()
     {
-
         PlayerRun();
         PlayerMove();
-
     }
+
     private void PlayerRun()
     {
         if (canRun)
@@ -40,6 +42,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
     private void PlayerRunLogic()
     {
         if (isIncreasingSpeed && moveSpeed < maxSpeed)
@@ -54,7 +57,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
     private void PlayerMove()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -68,10 +70,11 @@ public class PlayerController : MonoBehaviour
         else
         {
             PlayerRunLogic();
-            movement = new Vector2(horizontalInput, verticalInput) * moveSpeed * Time.deltaTime;
+            movement = new Vector2(horizontalInput, verticalInput) * moveSpeed;
             isSitting = false;
         }
 
-        transform.Translate(movement);
+        // Устанавливаем velocity для Rigidbody2D
+        rb.velocity = movement;
     }
 }
