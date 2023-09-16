@@ -30,11 +30,11 @@ public class TriggerSteirs : MonoBehaviour
     }
     private void Update()
     {
- 
 
         if (playerInsideTrigger && Input.GetKeyDown(KeyCode.E))
         {
-            GameObject.Find("Fader").GetComponent<LoadScene>().inxexScene = loadScene;
+            GameObject fader = GameObject.Find("Fader");
+            fader.GetComponent<LoadScene>().inxexScene = loadScene;
             if (anim != null) anim.SetBool("endScene", true);
         }
     }

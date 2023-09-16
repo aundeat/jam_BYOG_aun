@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DangerZone : MonoBehaviour
 {
-    public float visibilityIncreaseRate = 1f; 
-    public float increaseInterval = 0.5f; 
-    public float fastIncrease = 0.2f; 
+    public float visibilityOnStart = 1f;
+    public float visibilityIncreaseRate = 1f;
+    public float increaseInterval = 0.5f;
+    public float fastIncrease = 0.2f;
+    public float slowIncrease = 0.2f;
 
     private StealthMechanic stealthMechanic;
     private float timer = 0f;
@@ -23,9 +23,19 @@ public class DangerZone : MonoBehaviour
 
         if (timer >= increaseInterval && stealthMechanic != null && playerInside)
         {
-            stealthMechanic.IncreaseVisibility(visibilityIncreaseRate);
-            visibilityIncreaseRate *= fastIncrease;
-            timer = 0f;
+            if (Input.GetKey(KeyCode.LeftControl))
+            {
+                stealthMechanic.IncreaseVisibility(visibilityIncreaseRate);
+                visibilityIncreaseRate += slowIncrease;
+                timer = 0f;
+            }
+            else
+            {
+                stealthMechanic.IncreaseVisibility(visibilityIncreaseRate);
+                visibilityIncreaseRate *= fastIncrease;
+                timer = 0f;
+            }
+ 
         }
     }
 
@@ -43,7 +53,7 @@ public class DangerZone : MonoBehaviour
         {
             playerInside = false;
             timer = 0f;
-            visibilityIncreaseRate = 1f;
+            visibilityIncreaseRate = visibilityOnStart;
         }
     }
 }

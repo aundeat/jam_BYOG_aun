@@ -1397,9 +1397,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b82479580f7fa42a75cf97faa61cc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visibilityIncreaseRate: 1
+  visibilityOnStart: 0.3
+  visibilityIncreaseRate: 0.3
   increaseInterval: 0.1
-  fastIncrease: 1.1
+  fastIncrease: 1.3
+  slowIncrease: 0.004
 --- !u!1 &1681585718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,6 +1677,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1098380606}
+    - target: {fileID: 4951548738541084462, guid: 94e13aa7aa1968d4096cea329e2dbffe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951548738541084462, guid: 94e13aa7aa1968d4096cea329e2dbffe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951548738541084462, guid: 94e13aa7aa1968d4096cea329e2dbffe, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951548738541084462, guid: 94e13aa7aa1968d4096cea329e2dbffe, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8988154585312856671, guid: 94e13aa7aa1968d4096cea329e2dbffe, type: 3}
       propertyPath: m_Name
       value: Canvas
