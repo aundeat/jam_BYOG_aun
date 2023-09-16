@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class LogicAfterBook : MonoBehaviour, LogicAfterTake
 {
+    [SerializeField] private Animator anim;
+    [SerializeField] private int loadScene;
     public static GameObject instance;
     public void ExecuteCustomLogic()
     {
-        throw new System.NotImplementedException();
+        GameObject fader = GameObject.Find("Fader");
+        fader.GetComponent<LoadScene>().inxexScene = loadScene;
+        if (anim != null) anim.SetBool("endScene", true);
     }
 
 }
