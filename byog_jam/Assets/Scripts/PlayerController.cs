@@ -2,6 +2,8 @@
 
 public class PlayerController : MonoBehaviour
 {
+    public Animator animator;
+
     [SerializeField] private float speedIncreaseRate = 2f;
     [SerializeField] private float maxSpeed = 10f;
     [SerializeField] private bool canRun = false;
@@ -62,6 +64,9 @@ public class PlayerController : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
+
+        playerAnimation(horizontalInput, verticalInput);
+
         if (Input.GetKey(KeyCode.LeftControl))
         {
             movement = new Vector2(horizontalInput, verticalInput) * (moveSpeed / decreaseSpeed);
@@ -75,5 +80,13 @@ public class PlayerController : MonoBehaviour
         }
 
         rb.velocity = movement;
+    }
+
+
+    private void playerAnimation(float horizontalInput, float verticalInput)
+    {
+        animator.SetFloat("Horizontal", horizontalInput);
+        animator.SetFloat("Vertical", verticalInput);
+        animator.SetFloat("Speed", horizontalInput * horizontalInput + verticalInput * verticalInput);
     }
 }
