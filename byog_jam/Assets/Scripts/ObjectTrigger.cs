@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ObjectTrigger : MonoBehaviour
 {
+    [SerializeField] private LogicAfterTake logicAfterTake;
     private bool playerInsideTrigger = false;
     [SerializeField] private Item itemToadd;
     [SerializeField] private GameObject pressText;
@@ -39,6 +40,7 @@ public class ObjectTrigger : MonoBehaviour
                 GameObject.Find("Player").GetComponent<Inventory>().AddItem(itemToadd);
                 itemToadd = null;
                 pressText.SetActive(false);
+                logicAfterTake.ExecuteCustomLogic();
             }
         }
     }
