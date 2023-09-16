@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2240782255194901991}
   - component: {fileID: 9167071550110066449}
   m_Layer: 0
-  m_Name: 76138f53e05c7533_41
+  m_Name: door dungeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 16, y: 16, z: 1}
+  m_LocalScale: {x: 24, y: 24, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
