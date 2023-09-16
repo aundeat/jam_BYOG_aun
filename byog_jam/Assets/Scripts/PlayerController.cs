@@ -72,7 +72,6 @@ public class PlayerController : MonoBehaviour
             isSitting = false;
         }
 
-
         transform.Translate(movement);
     }
 }
