@@ -3,6 +3,7 @@ using UnityEngine;
 public class DialogTrigger : MonoBehaviour
 {
     [SerializeField] private Dialog dialog;
+    [SerializeField] private bool destroyOnExit;
     private void TriggerDialog()
     {
         FindObjectOfType<DialogManager>().StartDialog(dialog);
@@ -20,6 +21,10 @@ public class DialogTrigger : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         EndDialog();
+        if (destroyOnExit)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

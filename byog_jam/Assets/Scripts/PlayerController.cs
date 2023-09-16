@@ -14,12 +14,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float decreaseSpeed = 2f;
 
     private bool isSitting = false;
-    private Rigidbody2D rb; // Ссылка на компонент Rigidbody2D
+    private Rigidbody2D rb; 
 
     private void Start()
     {
         minSpeed = moveSpeed;
-        rb = GetComponent<Rigidbody2D>(); // Получаем компонент Rigidbody2D
+        rb = GetComponent<Rigidbody2D>(); 
     }
 
     private void Update()
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftControl))
         {
-            movement = new Vector2(horizontalInput, verticalInput) * ((moveSpeed * Time.deltaTime) / decreaseSpeed);
+            movement = new Vector2(horizontalInput, verticalInput) * (moveSpeed / decreaseSpeed);
             isSitting = true;
         }
         else
@@ -74,7 +74,6 @@ public class PlayerController : MonoBehaviour
             isSitting = false;
         }
 
-        // Устанавливаем velocity для Rigidbody2D
         rb.velocity = movement;
     }
 }
