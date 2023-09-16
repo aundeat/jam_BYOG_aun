@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ObjectTrigger : MonoBehaviour
 {
-    [SerializeField] private LogicAfterTake logicAfterTake;
+    public LogicAfterBook logicAfterTake;
     private bool playerInsideTrigger = false;
     [SerializeField] private Item itemToadd;
     [SerializeField] private GameObject pressText;
