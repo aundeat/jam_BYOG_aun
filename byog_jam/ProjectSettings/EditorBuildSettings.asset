@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/manu/menu_01.unity
     guid: 3d694998a5ee6474ca38eb966b640115
+  - enabled: 1
+    path: Assets/Scenes/FirstFloorNextDay.unity
+    guid: 0779e2391682f994f99ce7614aec6598
+  - enabled: 1
+    path: Assets/underground/podwal.unity
+    guid: e7c4134b117528147b655c6af22c439f
   m_configObjects: {}
