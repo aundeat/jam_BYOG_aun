@@ -1244,6 +1244,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -34, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -43, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -7436,7 +7446,7 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 66
+  - m_RefCount: 67
     m_Data: {fileID: 11400000, guid: de86c10c31a5dfb4dbe29aa85f2311d9, type: 2}
   - m_RefCount: 98
     m_Data: {fileID: 11400000, guid: 4ae3cac6fd7e6fa44abd4fc96d9eaa20, type: 2}
@@ -7457,7 +7467,7 @@ Tilemap:
   - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: 8d2aa1cc3fd2fcf45b4894d567f0613e, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 66
+  - m_RefCount: 67
     m_Data: {fileID: 902886128, guid: 6c8ea207c3aba54468001d0b316f0b26, type: 3}
   - m_RefCount: 98
     m_Data: {fileID: -214481072, guid: 6c8ea207c3aba54468001d0b316f0b26, type: 3}
@@ -7478,7 +7488,7 @@ Tilemap:
   - m_RefCount: 11
     m_Data: {fileID: 1836708642, guid: b1c58e08982966d42829db92575c26fc, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 626
+  - m_RefCount: 627
     m_Data:
       e00: 1
       e01: 0
@@ -7497,7 +7507,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 626
+  - m_RefCount: 627
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -56189,6 +56199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58d600c2017051418bf4d1e58a7dbe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logicAfterTake: {fileID: 0}
   itemToadd: {fileID: 11400000, guid: 855620b3536f7a140ba772ab7781044a, type: 2}
   pressText: {fileID: 1915073225}
   playerLight: {fileID: 0}
@@ -58298,6 +58309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58d600c2017051418bf4d1e58a7dbe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logicAfterTake: {fileID: 0}
   itemToadd: {fileID: 11400000, guid: adb79b5ffe2e459419a864eff0c44a29, type: 2}
   pressText: {fileID: 1915073225}
   playerLight: {fileID: 0}
@@ -61579,6 +61591,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1609942464180866623, guid: 94e13aa7aa1968d4096cea329e2dbffe, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000091552734
+      objectReference: {fileID: 0}
     - target: {fileID: 2378396385799839481, guid: 94e13aa7aa1968d4096cea329e2dbffe, type: 3}
       propertyPath: m_Pivot.x
       value: 0
