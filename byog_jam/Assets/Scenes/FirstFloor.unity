@@ -13406,7 +13406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 23987168}
-  loadScene: 1
+  loadScene: 4
 --- !u!1001 &850855981
 PrefabInstance:
   m_ObjectHideFlags: 0
