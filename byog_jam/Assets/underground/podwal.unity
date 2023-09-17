@@ -37311,6 +37311,7 @@ GameObject:
   - component: {fileID: 712239314}
   - component: {fileID: 712239313}
   - component: {fileID: 712239312}
+  - component: {fileID: 712239316}
   m_Layer: 0
   m_Name: finger
   m_TagString: Untagged
@@ -37446,6 +37447,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &712239316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712239311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08979917c2e039f4ab8a5d64889b1419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  loadScene: 0
 --- !u!1 &725400553 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8988154585312856671, guid: 94e13aa7aa1968d4096cea329e2dbffe, type: 3}
