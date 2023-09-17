@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FirstFloor.unity
     guid: 441a2e78fd5fe264398a2d9dfcfa447d
+  - enabled: 1
+    path: Assets/manu/menu_01.unity
+    guid: 3d694998a5ee6474ca38eb966b640115
   m_configObjects: {}
