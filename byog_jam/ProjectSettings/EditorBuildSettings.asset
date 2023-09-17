@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/run to home.unity
     guid: a5d5930376d1e1249b79a9c536c4342e
+  - enabled: 1
+    path: Assets/underground/end of game.unity
+    guid: 780eae0bb93c40b43966f23be042fb95
   m_configObjects: {}

@@ -12148,7 +12148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logicAfterTake: {fileID: 840759193}
-  itemToadd: {fileID: 0}
+  itemToadd: {fileID: 11400000, guid: 6a9ed011578461f43ae3ef074e45d116, type: 2}
   pressText: {fileID: 1970314745}
   playerLight: {fileID: 0}
 --- !u!212 &840759195
