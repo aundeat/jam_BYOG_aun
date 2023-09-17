@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FirstFloorNight.unity
     guid: 3c93eedef4d91c64cacaa4512b42e580
+  - enabled: 1
+    path: Assets/Scenes/run to home.unity
+    guid: a5d5930376d1e1249b79a9c536c4342e
   m_configObjects: {}
