@@ -2846,7 +2846,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2593441567978660442, guid: 33d9214de39aeb94f9be6c6525b684dc, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2608638129130734933, guid: 33d9214de39aeb94f9be6c6525b684dc, type: 3}
       propertyPath: m_Name
@@ -4923,7 +4923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 402295237}
-  loadScene: 6
+  loadScene: 7
   pressText: {fileID: 1498863508}
 --- !u!4 &1191642575
 Transform:
@@ -7103,7 +7103,7 @@ PrefabInstance:
     - target: {fileID: 701014013556189539, guid: 517bf3594ac35314f8bbb99639703f84, type: 3}
       propertyPath: items.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: adb79b5ffe2e459419a864eff0c44a29, type: 2}
+      objectReference: {fileID: 11400000, guid: 6a9ed011578461f43ae3ef074e45d116, type: 2}
     - target: {fileID: 2849037293558024776, guid: 517bf3594ac35314f8bbb99639703f84, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.23
