@@ -2458,7 +2458,7 @@ MonoBehaviour:
   visibilityIncreaseRate: 1
   increaseInterval: 0.2
   fastIncrease: 3
-  slowIncrease: 1
+  slowIncrease: 0.5
 --- !u!61 &578192431
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37385,6 +37385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 704091771}
   - component: {fileID: 704091770}
+  - component: {fileID: 704091772}
   m_Layer: 0
   m_Name: papwithtrup
   m_TagString: Untagged
@@ -37459,6 +37460,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &704091772
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704091769}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e5a087acf2efe3d4fa5b788b9f410905, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &712239311
 GameObject:
   m_ObjectHideFlags: 0
@@ -37756,7 +37778,7 @@ MonoBehaviour:
   visibilityIncreaseRate: 1
   increaseInterval: 0.3
   fastIncrease: 3
-  slowIncrease: 2
+  slowIncrease: 0.5
 --- !u!61 &800666976
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39078,9 +39100,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visibilityOnStart: 1
   visibilityIncreaseRate: 1
-  increaseInterval: 1.3
+  increaseInterval: 1
   fastIncrease: 3
-  slowIncrease: 0.2
+  slowIncrease: 0.1
 --- !u!61 &1779182411
 BoxCollider2D:
   m_ObjectHideFlags: 0
